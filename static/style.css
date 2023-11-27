@@ -1,0 +1,115 @@
+* {
+    font-size: 1.3vw;
+    font-family: "Poppins", sans-serif;
+    margin: 0; 
+}
+
+body {
+    background-color: #ccc;
+}
+
+.card {
+    height: auto;
+    width: 98vw;
+    background-color: white;
+    margin: 0 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#header {
+    height: 5vw;
+    background-color: #000;
+    padding: 1vw 0; 
+}
+
+#header h1 {
+    font-size: 2vw;
+    font-family: "Poppins", sans-serif; 
+    color: white;
+    padding: 1vw;
+}
+
+#message-section {
+    height: 32vw;
+    padding: 0 2.5vw;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbarBG) var(--thumbBG);
+}
+
+#message-section #bot,
+#message-section #user {
+    min-height: 1.5vw;
+    border: 1px solid #777;
+    background-color: white;
+    border-radius: 0 15px 15px 15px;
+}
+
+#message-section #user {
+    border: 1px solid #000;
+    background-color: black;
+    color: white;
+    float: right;
+}
+
+#message-section #user #user-response {
+    color: rgb(255, 255, 255);
+}
+
+.card #message-section .message {
+    color: black;
+    padding: 10px;
+    line-height: 5vw;
+    max-width: 85%;
+    word-wrap: break-word;
+    z-index: 2;
+    float: right;
+}
+
+#input-section {
+    padding: 0 2.5vw;
+    display: flex;
+    height: 6vw;
+    width: 100%;
+    margin: 0; 
+}
+
+#input-section input {
+    color: black;
+    min-width: 0.5vw;
+    outline: none;
+    height: 5vw;
+    width: 80vw;
+    border: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.1vw solid black;
+    margin: 0; 
+    padding: 0 5px; 
+}
+
+.send {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    margin-left: auto; 
+    padding: 0;
+    position: relative;
+    outline: none;
+}
+
+.send .circle {
+    position: relative;
+    width: 4.8vw;
+    height: 4.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send .circle i {
+    font-size: 3vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
